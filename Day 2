@@ -1,0 +1,13 @@
+Example:
+Write a SQL query to retrieve all the columns from the "employees" table where the "salary" is greater than 50000.
+SELECT *FROM employees WHERE salary>50000;
+
+Practice Questions:
+
+1. Write a SQL query to retrieve all the columns from the "products" table where the "category" is 'Electronics' and the "price" is less than 1000.
+2. Write a SQL query to retrieve the names of all customers from the "customers" table in alphabetical order.
+3. Write a SQL query to retrieve the total number of orders from the "orders" table
+
+SELECT *FROM products WHERE category='Electronics' AND price<1000;
+SELECT customers FROM customers ORDER BY=name;
+SELECT COUNT(*) AS total_orders FROM orders;

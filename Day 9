@@ -1,0 +1,7 @@
+Example:
+Create a view named "high_salary_employees" that retrieves all the employees with a salary greater than 50000 from the "employees" table.
+
+Practice Questions:
+1. Create a view named "order_summary" that retrieves the total order amount and the number of orders for each customer from the "orders" table.
+2. Create an index on the "email" column of the "customers" table for faster searching.
+3. Create a view named "product_inventory" that retrieves the product name and the available quantity for each product from the "products" and "inventory" tables.

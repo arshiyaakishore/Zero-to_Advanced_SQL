@@ -1,0 +1,10 @@
+Example:
+Write a SQL query to retrieve all the columns from the "customers" table.
+
+Practice Questions:
+1. Write a SQL query to insert a new record into the "employees" table.
+2. Write a SQL query to update the "quantity" column of the "products" table to 10 where the "product_id" is 5.
+3. Write a SQL query to delete all records from the "orders" table where the "status" is 'cancelled'.
+
+CREATE TABLE employees(emp_id number(3), f_name varchar2(50),)
+INSERT INTO employees (employee_id, first_name, last_name, job_title, hire_date) VALUES (101, 'John', 'Doe', 'Sales Associate', '2023-10-22');

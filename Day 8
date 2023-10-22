@@ -1,0 +1,7 @@
+Example:
+Write a SQL query to retrieve all the products with a price higher than the average price of all products.
+
+Practice Questions:
+1. Write a SQL query to retrieve the names of all employees who have a salary higher than the maximum salary of the 'Sales' department.
+2. Write a SQL query to retrieve all the customers who have placed an order after the latest order date for a specific product.
+3. Write a SQL query to retrieve all the products that belong to categories with more than 10 products.

@@ -9,4 +9,7 @@ Practice Questions:
 
 SELECT category_id, AVG(price) AS average_price from products GROUP BY category_id;
 
-SELECT 
+SELECT MAX(salary) AS max_salary from employees GROUP BY department_id;
+
+//Q3 left
+SELECT o.customer_id, SUM(oi.order_item_price) as total_revenue FROM orders o INNER JOIN order_items oi ON o.order_id = oi.order_id GROUP BY o.customer_id;

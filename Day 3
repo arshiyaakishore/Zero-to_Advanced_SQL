@@ -2,7 +2,7 @@ Example:
 Write a SQL query to retrieve the customer name and order date from the "customers" and "orders" tables, joining them on the "customer_id" column.
 
 SELECT c.name AS customer_name, o.order_date FROM customers c INNER JOIN orders o ON c.customer_id = o.customer_id;
-SELECT c.name AS cust
+
 
 Practice Questions:
 1. Write a SQL query to retrieve the product name, category, and supplier name from the "products", "categories", and "suppliers" tables, joining them on the appropriate columns.
@@ -10,3 +10,4 @@ Practice Questions:
 3. Write a SQL query to retrieve the customer name and order amount from the "customers" and "orders" tables, joining them on the "customer_id" column and only including orders with amounts greater than 1000.
 
 SELECT p.product_name, c.category_name, s.supplier_name FROM products p INNER JOIN categories c ON p.category_id = c.category_id INNER JOIN suppliers s ON p.supplier_id = s.supplier_id;
+SELECT e.employee_name, 

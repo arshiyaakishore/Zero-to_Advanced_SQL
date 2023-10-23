@@ -1,6 +1,6 @@
 Example:
 Write a SQL query to retrieve the total number of orders for each customer from the "orders" table.
-
+SELECT customer_id, COUNT(*) as total_orders from orders GROUP BY customer_id;
 
 Practice Questions:
 1. Write a SQL query to retrieve the average price of products in each category from the "products" table.

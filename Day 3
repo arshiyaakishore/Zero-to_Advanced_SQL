@@ -10,4 +10,7 @@ Practice Questions:
 3. Write a SQL query to retrieve the customer name and order amount from the "customers" and "orders" tables, joining them on the "customer_id" column and only including orders with amounts greater than 1000.
 
 SELECT p.product_name, c.category_name, s.supplier_name FROM products p INNER JOIN categories c ON p.category_id = c.category_id INNER JOIN suppliers s ON p.supplier_id = s.supplier_id;
-SELECT e.employee_name, 
+
+SELECT e.employee_name, d.department_name FROM employees e INNER JOIN departments d ON e.department_id = d.department_id;
+
+SELECT c.customer_name, o.order_amount FROM customers c INNER JOIN orders o ON c.customer_id = o.customer_id WHERE o.order_amount > 1000;

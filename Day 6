@@ -1,9 +1,15 @@
 Example:
 Write a SQL query to retrieve all the customers whose names start with 'J' and have a city containing 'York'.
 
-SELECT customer_names FROM customers WHERE customer_names LIKE 'J%' AND 
+SELECT * FROM customers WHERE customer_names LIKE 'J%' AND customer_city LIKE '%York%';
 
 Practice Questions:
 1. Write a SQL query to retrieve all the products with a price either above 1000 or below 500.
 2. Write a SQL query to retrieve the employees who were hired between a specific date range.
 3. Write a SQL query to retrieve all the customers who do not have a phone number specified in the database.
+
+SELECT * FROM products WHERE price>1000 OR price<500;
+
+SELECT * FROM emplolyees WHERE hire_date '2023-01-01' BETWEEN 'YYYY-MM-DD';
+
+SELECT * FROM customers WHERE phone_no IS NULL;

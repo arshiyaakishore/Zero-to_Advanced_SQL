@@ -2,8 +2,14 @@ Example:
 Write a SQL query to update the "quantity" column of the "products" table to 20 for all products with a price greater than 100.
 UPDATE products SET quantity=20 WHERE quantity>100;
 
-
 Practice Questions:
 1. Write a SQL query to delete all records from the "customers" table where the "last_login_date" is older than 1 year.
 2. Write a SQL query to insert new records into the "employees" table, selecting data from the "temp_employees" table.
 3. Write a SQL query to update the "discount" column of the "orders" table by increasing it by 5% for all orders placed before a specific date
+
+
+DELETE FROM customers WHERE last_login_date< DATE_SUB(NOW(), INTERVAL 1 YEAR);
+
+INSERT INTO employees (employee_id, employee_name, department, hire_date) SELECT employee_id, employee_name, department, hire_date FROM temp_employees;
+
+UPDATE orders SET discount= discount*1.05 WHERE order_date<'specific_date_here';

@@ -1,6 +1,8 @@
 Example:
 Write a SQL query to retrieve the length of the product names from the "products" table.
 
+SELECT product_name, LENGTH(product_name) AS length_product_name from products;
+
 Practice Questions:
 1. Write a SQL query to retrieve the current date and time.
 2. Write a SQL query to retrieve the uppercase names of all the employees from the "employees" table.

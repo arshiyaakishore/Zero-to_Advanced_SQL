@@ -25,3 +25,18 @@ Dataset: Customers (customer_id, customer_name, city), Orders (order_id, custome
 5. Write a query to find the customers who have placed orders for products with a price greater than $100.
 Dataset: Customers (customer_id, customer_name), Orders (order_id, customer_id, order_date). Products (product_id, product_name, price), Order_Details (order_id, product_id, quantity)
 
+6. Get the average order amount for each customer.
+Dataset: Customers (customer_id, customer_name), Orders (order_id, customer_id, order_date, order amount)
+
+7. Find the products that have never been ordered.
+Dataset: Products (product_id, product_name), Order_Items (order_id, product_id, quantity)
+
+8. Retrieve the names of customers who have placed orders on weekends (Saturday or Sunday).
+Dataset: Customers (customer_id, customer_name), Orders (order_id, customer_id, order_date)
+
+9. Get the total order amount for each month.
+Dataset: Orders (order_id, order_date, order_amount)
+
+10. Write a query to find the customers who have placed orders for more than two different products.
+Dataset: Customers (customer_id, customer_name), Orders (order_id, customer_id, order_date), Order_Items (order_id, product_id, quantity)
+

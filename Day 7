@@ -15,4 +15,9 @@ SELECT SYSDATE() FROM DUAL;
 --for SQL Server
 SELECT NOW();
 
+SELECT UPPER(employee_name) AS uppercase_name FROM employees;
+
+SELECT AVG(price*0.9) AS avg_discount_price FROM products;
+
+
 

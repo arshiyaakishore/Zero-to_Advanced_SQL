@@ -1,0 +1,7 @@
+Example:
+Alter the "employees" table to add a new column named "address" of type VARCHAR(100).
+
+Practice Questions:
+1. Rename the table "customer_details" to "client_details".
+2. Delete the "quantity" column from the "products" table.
+3. Modify the "orders" table to change the data type of the "order_date" column to DATE.

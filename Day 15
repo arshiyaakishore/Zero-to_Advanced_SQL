@@ -1,0 +1,9 @@
+Resources:
+"SQL Subqueries" on w3schools.com (https:// www.w3schools.com/sql/sql_subqueries.asp)
+"Subqueries in SQL: A Complete Guide" on sqlshack.com (https://www.sqlshack.com/subqueries-in-sql-a-complete- guide/
+
+
+Example Questions:
+1. Retrieve all customers who have made at least one purchase.
+2. Find the names of customers who have not made any purchases.
+3. Get the order details for orders with a total quantity greater than the average quantity of all orders.

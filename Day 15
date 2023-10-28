@@ -7,3 +7,21 @@ Example Questions:
 1. Retrieve all customers who have made at least one purchase.
 2. Find the names of customers who have not made any purchases.
 3. Get the order details for orders with a total quantity greater than the average quantity of all orders.
+
+Practice Questions
+
+1. Write a query to find the top 5 customers with the highest total order amount.
+Dataset: Customers (customer_id, customer_name), Orders (order_id, customer_id, order_date, order amount)
+
+2. Retrieve the names of customers who have placed orders in the past 30 days.
+Dataset: Customers (customer_id, customer_name), Orders (order_id, customer_id, order_date)
+
+3. Find the products that have been ordered at least three times.
+Dataset: Products (product_id, product_name), Order Items (order_id, product_id, quantity)
+
+4. Retrieve the order details for orders placed by customers from a specific city.
+Dataset: Customers (customer_id, customer_name, city), Orders (order_id, customer_id, order_date), Order_Details (order_id, product_id, quantity)
+
+5. Write a query to find the customers who have placed orders for products with a price greater than $100.
+Dataset: Customers (customer_id, customer_name), Orders (order_id, customer_id, order_date). Products (product_id, product_name, price), Order_Details (order_id, product_id, quantity)
+

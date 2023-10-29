@@ -7,4 +7,22 @@ Example Questions:
 2. Find the products and their corresponding categories.
 3. Get a list of customers and their total order amounts.
 
+Practice Questions
 
+1. Retrieve the order details along with the customer name and product name for each order.
+Dataset: Customers (customer_id, customer_name). Orders (order_id, customer_id, order_date), Order_Items (order_id, product_id, quantity)
+
+2. Find the products and their corresponding suppliers' names.
+Dataset: Products (product_id, product_name, supplier_id), Suppliers (supplier_id, suppliere)
+
+3. Get a list of customers who have never placed an order.
+Dataset: Customers (customer_id, customer_name), Orders (order_id, customer_id)
+
+4. Retrieve the names of customers along with the total quantity of products they ordered.
+Dataset: Customers (customer_id, customer_name), Orders (order_id, customer_id), Order_Items (order_id, product_id, quantity)
+
+5. Find the products that have been ordered by customers from a specific country.
+Dataset: Products (product_id, product_name), Orders (order_id, customer_id), Customers (customer_id, country)
+
+6. Get the total order amount for each customer, including those who have not placed any orders.
+Dataset: Customers (customer_id, customer_name), Orders (order_id, customer_id, order amount)

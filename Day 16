@@ -25,4 +25,17 @@ Dataset: Customers (customer_id, customer_name), Orders (order_id, customer_id),
 Dataset: Products (product_id, product_name), Orders (order_id, customer_id), Customers (customer_id, country)
 
 6. Get the total order amount for each customer, including those who have not placed any orders.
+
+
+7. Retrieve the order details for orders placed by customers with a specific occupation.
+Dataset: Customers (customer_id, customer_name, occupation), Orders (order_id, customer_id, order_date), Order Items (order_id, product_id, quantity)
+
+8. Find the customers who have placed orders for products with a price higher than the average price of all products.
+Dataset: Customers (customer_id, customer_name), Orders (order_id, customer_id, order_date), Products (product_id, product_name, price), Order_Items (order_id, product_id, quantity)
+
+9. Retrieve the names of customers along with the total number of orders they have placed.
+Dataset: Customers (customer_id, customer_name). Orders (order_id, customer_id)
+
+10. Get a list of products and the total quantity ordered for each product.
+Dataset: Products (product_id, product_name), Order_Items (order_id, product_id, quantity)
 Dataset: Customers (customer_id, customer_name), Orders (order_id, customer_id, order amount)

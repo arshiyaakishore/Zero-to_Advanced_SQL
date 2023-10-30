@@ -1,0 +1,40 @@
+Resources:
+"SQL Wildcards" and "SQL Regular Expressions" on tutorialspoint.com (https://www.tutorialspoint.com/sql/sql- regular-expressions.htm)
+"Sorting Rows with NULL Values in SQL" on stackoverflow.com (https://stackoverflow.m/questions/18411081/sorting-rows- with-null-values-in-sql
+
+Example Questions:
+1. Retrieve all employees whose names start with 'J'.
+2. Find the products with names containing the word 'red".
+3. Get the list of employees sorted by their hire date in descending order.
+
+Practice Questions
+
+1. Retrieve all customers with names starting with 'A' and ending with 'n'
+Dataset: Customers (customer_id, customer_name)
+
+2. Find the products with names containing at least one digit.
+Dataset: Products (product_id, product_name)
+
+3. Get the list of employees sorted by their salary in ascending order.NULL values should appear at the end.
+Dataset: Employees (employee_id, employee_name, salary)
+
+4. Retrieve the customers whose names contain exactly five characters.
+Dataset: Customers (customer_id, customer_name)
+
+5. Find the products with names starting with 'S' and ending with e.
+Dataset: Products (product_id, product_name)
+
+6. Get the list of employees sorted by their last name and then by their first name.
+Dataset: Employees (employee_id, first name. last_name, salary)
+
+7. Retrieve the orders placed on a specific date and sort them by the customer name in alphabetical order.
+Dataset: Orders (order_id, order date, customer_id)
+
+8. Find the products with names containing exactly three letters.
+Dataset: Products (product_id, product_name)
+
+9. Get the list of employees sorted by their salary in descending order. NULL values should appear at the beginning.
+Dataset: Employees (employee_id, employee_name, salary)
+
+10. Retrieve the customers whose names contain a space character.
+Dataset: Customers (customer_id, customer name)

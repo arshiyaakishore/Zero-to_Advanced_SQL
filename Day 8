@@ -7,3 +7,7 @@ Practice Questions:
 1. Write a SQL query to retrieve the names of all employees who have a salary higher than the maximum salary of the 'Sales' department.
 2. Write a SQL query to retrieve all the customers who have placed an order after the latest order date for a specific product.
 3. Write a SQL query to retrieve all the products that belong to categories with more than 10 products.
+
+SELECT employee_name FROM employees WHERE salary>(SELECT MAX(salary) FROM employees WHERE department='Sales';
+
+SELECT DISTINCT c.customer_name FROM customers c JOIN orders o ON c.customer_id = o.customer_id WHERE o.order_date > (SELECT MAX(order_date) FROM order_details WHERE product_id = 'specific_product_id');

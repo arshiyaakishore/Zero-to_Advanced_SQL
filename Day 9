@@ -3,6 +3,7 @@ Create a view named "high_salary_employees" that retrieves all the employees wit
 
 CREATE VIEW high_salary_employees AS SELECT * FROM employees WHERE salary > 50000;
 --view is a virtual table based on the result-set of an SQL statement.
+--view contains rows and columns, just like a real table. The fields in a view are fields from one or more real tables in the database.
 
 Practice Questions:
 1. Create a view named "order_summary" that retrieves the total order amount and the number of orders for each customer from the "orders" table.

@@ -1,7 +1,7 @@
 Example:
 Create a table named "employees" with columns for employee ID, name, and email, where the employee ID is the primary key and the email must be unique.
 
-CREATE table employees
+CREATE table employees( employee_ID INT PRIMARY KEY, name varchar(20), email varchar(250) UNIQUE);
 
 Practice Questions:
 1. Create a table named "orders" with columns for order ID, customer ID, and order date, where the order ID is the primary key and the customer ID references the "customers" table.

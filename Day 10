@@ -1,6 +1,8 @@
 Example:
 Create a table named "employees" with columns for employee ID, name, and email, where the employee ID is the primary key and the email must be unique.
 
+CREATE table employees
+
 Practice Questions:
 1. Create a table named "orders" with columns for order ID, customer ID, and order date, where the order ID is the primary key and the customer ID references the "customers" table.
 2. Create a table named "products" with columns for product ID, name, and price, where the product ID is the primary key and the price cannot be null.

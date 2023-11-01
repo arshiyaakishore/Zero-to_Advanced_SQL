@@ -8,3 +8,9 @@ Practice Questions:
 1. Rename the table "customer_details" to "client_details".
 2. Delete the "quantity" column from the "products" table.
 3. Modify the "orders" table to change the data type of the "order_date" column to DATE.
+
+ALTER TABLE customer_details RENAME TO client_details;
+
+ALTER TABLE products DROP COLUMN quantity;
+
+ALTER TABLE orders ALTER COLUMN order_date TYPE DATE;

@@ -1,6 +1,9 @@
 Example:
 Alter the "employees" table to add a new column named "address" of type VARCHAR(100).
 
+ALTER TABLE employees ADD address VARCHAR(100);
+
+
 Practice Questions:
 1. Rename the table "customer_details" to "client_details".
 2. Delete the "quantity" column from the "products" table.

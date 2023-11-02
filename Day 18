@@ -6,3 +6,27 @@ Example Questions:
 1. Calculate the total order amount for each customer.
 2. Find the average salary for each department.
 3. Get the maximum and minimum quantities ordered for each product.
+
+Practice Questions
+
+1. Calculate the total quantity and total amount for each order.
+Dataset: Orders (order_id, order_date). Order Items (order_id, product_id, quantity, amount)
+
+2. Find the average age and the number of employees for each job title.
+Dataset: Employees (employee_id, employee_name, age, job_title)
+
+3. Get the total number of products in each category.
+Dataset: Products (product_id, product_name, category_id), Categories (category_id, category_name)
+
+4. Calculate the average rating and the number of reviews for each product.
+Dataset: Products (product_id, product_name). Reviews (product_id, rating)
+
+5. Find the customers with the highest and lowest total order amounts.
+Dataset: Customers (customer_id, customer_name). Orders (order_id, customer_id, order amount)
+
+6. Get the maximum and minimum ages for each department.
+Dataset: Employees (employee_id, employee_name, age, department)
+
+7. Calculate the total sales amount and the number of orders for each month.
+Dataset: Orders (order_id, order date, order amount)
+

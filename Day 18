@@ -1,0 +1,8 @@
+Resources:
+"SQL Aggregate Functions" on sqlservertutorial.net (https:// www.sqlservertutorial.net/sql-server-aggregate-functions/
+"GROUP BY Clause" on geeksforgeeks.org (https:// www.geeksforgeeks.org/sql-group-by/)
+
+Example Questions:
+1. Calculate the total order amount for each customer.
+2. Find the average salary for each department.
+3. Get the maximum and minimum quantities ordered for each product.

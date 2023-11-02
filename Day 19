@@ -7,3 +7,34 @@ Example Questions:
 2. Delete all orders placed by a certain customer.
 3. Insert a new product into the database and ensure transactional integrity.
 
+Practice Questions
+1. Increase the salary of all employees by 10%.
+Dataset: Employees (employee_id, employee_name, salary)
+
+2. Delete all orders older than 1 year and their associated order items.
+Dataset: Orders (order_id, order date), Order_Items (order_id, product_id, quantity)
+
+3. Insert a new category into the database and update all products of a specific category to the new category in a single transaction.
+Dataset: Categories (category_id, category_name), Products(product_id, product_name, category_id) .
+
+4.Update the discount percentage for all products in a specific price range.
+Dataset: Products (product_id, product_name, price, discount percentage)
+
+5.Delete all reviews with a rating lower than 3.
+Dataset: Reviews (product_id, rating, review_text)
+
+6. Insert a new customer into the database along with their associated orders and order items in a single transaction.
+Dataset: Customers (customer_id, customer_name), Orders (order_id, customer_id, order date), Order_Items (order_id, product_id, quantity)
+
+7. Increase the salary of all employees in a specific department by 15%
+Dataset: Employees (employee_id, employee_name, salary, department)
+Practice Questions
+
+8. Delete all products that have not been ordered.
+Dataset: Products (product_id, product_name), Order Items (order_id, product_id, quantity)
+
+9. Insert a new supplier into the database along with their associated products and ensure that all the records are inserted or none at all.
+Dataset: Suppliers (supplier_id, supplier_name), Products (product_id, product_name, supplier_id)
+
+10. Update the order dates for all orders placed on weekends to the following Monday.
+Dataset: Orders (order_id, order_date)

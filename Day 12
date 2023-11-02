@@ -1,6 +1,17 @@
 Example:
 Write a SQL query to retrieve all employees and their respective managers from the "employees" table using a self-join.
 
+SELECT
+    e.employee_id AS employee_id,
+    e.employee_name AS employee_name,
+    m.employee_id AS manager_id,
+    m.employee_name AS manager_name
+FROM
+    employees e
+LEFT JOIN
+    employees m ON e.manager_id = m.employee_id;
+
+
 Practice Questions:
 1. Write a SQL query to retrieve all the orders that do not have any corresponding items in the "order_items" table using a subquery.
 2. Write a SQL query to retrieve all the products along with the total quantity sold for each product from the "products" and "order_items" tables using a join and subquery.

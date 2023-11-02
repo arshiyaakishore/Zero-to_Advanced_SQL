@@ -1,0 +1,9 @@
+Resources:
+"SQL UPDATE Statement" and "SQL DELETE Statement" on techonthenet.com (https://www.techonthenet.com/sql/ update.php)
+• "SQL Transactions" on tutorialspoint.com (https:// www.tutorialspoint.com/sql/sql-transactions.htm)
+
+Example Questions:
+1. Update the email address of a specific customer.
+2. Delete all orders placed by a certain customer.
+3. Insert a new product into the database and ensure transactional integrity.
+

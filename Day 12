@@ -16,3 +16,5 @@ Practice Questions:
 1. Write a SQL query to retrieve all the orders that do not have any corresponding items in the "order_items" table using a subquery.
 2. Write a SQL query to retrieve all the products along with the total quantity sold for each product from the "products" and "order_items" tables using a join and subquery.
 3. Write a SQL query to retrieve all the customers who have placed an order in the same month and year as their registration date
+
+SELECT *FROM orders WHERE order_id NOT IN (SELECT order_id FROM order_items);

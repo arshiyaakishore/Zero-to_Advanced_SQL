@@ -1,5 +1,12 @@
 Example:
 Write a SQL query to start a transaction, update the "inventory" table by reducing the quantity of a product, and commit the transaction.
+BEGIN TRANSACTION;
+UPDATE inventory
+SET quantity = quantity - quantity_to_reduce
+WHERE product_id = your_product_id;
+COMMIT;
+
+
 
 Practice Questions:
 1. Write a SQL query to start a transaction, delete all records from the "orders" table, and roll back the transaction.

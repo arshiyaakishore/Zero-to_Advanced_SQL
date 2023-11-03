@@ -26,3 +26,11 @@ Dataset: Orders (order_id, order_date, order amount)
 7. Create a view to display the average salary for each department.
 Dataset: Employees (employee_id, employee_name, salary, department)
 
+8. Optimize a query that retrieves the list of products with their respective categories, filtering them by a specific category.
+Dataset: Products (product_id, product_name, category_id), Categories (category_id, category_name)
+
+9. Create an index on the "product_name" column of the "Products" table and analyze the query performance for a specific search term.
+Dataset: Products (product_id, product_name, category_id)
+
+10. Create a view to display the total order amount for each customer.
+Dataset: Customers (customer_id, customer_name), Orders (order_id, customer_id, order_amount)

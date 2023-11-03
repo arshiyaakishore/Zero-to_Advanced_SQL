@@ -3,3 +3,26 @@ Example Questions:
 1. Create a view to retrieve the list of products and their quantities in stock.
 2. Optimize a slow-performing query using proper indexing techniques.
 
+Practice Questions
+
+1. Create a view to display the total sales amount for each product.
+Dataset: Products (product_id, product_name), Order_Items (order_id, product_id, quantity, amount)
+
+2. Optimize a query that retrieves the order details for a specific customer, sorting them by the order date in descending order.
+Dataset: Customers (customer_id, customer_name), Orders (order_id, customer_id, order_date, order amount)
+
+3. Create an index on the "last_name" column of the "Employees" table and measure the performance improvement on a specific query.
+Dataset: Employees (employee_id, first_name, last_name, salary)
+
+4. Create a view to display the average rating and the number of reviews for each product.
+Dataset: Products (product_id, product_name), Reviews (product_id, rating)
+
+5. Optimize a query that retrieves the top 10 customers with the highest total order amounts.
+Dataset: Customers (customer_id, customer_name), Orders (order_id, customer_id, or amount)
+
+6. Create an index on the "order_date" column of the "Orders" table and analyze the query performance for a specific date range.
+Dataset: Orders (order_id, order_date, order amount)
+
+7. Create a view to display the average salary for each department.
+Dataset: Employees (employee_id, employee_name, salary, department)
+

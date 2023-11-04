@@ -15,7 +15,35 @@ JOIN
 
 
 2. Find the names of customers who have not made any purchases.
+
+SELECT
+    c.CustomerName
+FROM
+    Customers AS c
+LEFT JOIN
+    Orders AS o ON c.CustomerID = o.CustomerID
+WHERE
+    o.CustomerID IS NULL;
+
+
 3. Get the order details for orders with a total quantity greater than the average quantity of all orders.
+SELECT
+    o.OrderID,
+    o.OrderDate,
+    od.ProductID,
+    od.Quantity,
+    od.UnitPrice,
+    (od.Quantity * od.UnitPrice) AS TotalAmount
+FROM
+    Orders AS o
+JOIN
+    OrderDetails AS od ON o.OrderID = od.OrderID
+WHERE
+    od.Quantity > (
+        SELECT AVG(Quantity) FROM OrderDetails
+    );
+
+
 
 Practice Questions
 

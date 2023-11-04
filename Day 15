@@ -5,6 +5,15 @@ Resources:
 
 Example Questions:
 1. Retrieve all customers who have made at least one purchase.
+SELECT DISTINCT
+    c.CustomerID,
+    c.CustomerName
+FROM
+    Customers AS c
+JOIN
+    Orders AS o ON c.CustomerID = o.CustomerID;
+
+
 2. Find the names of customers who have not made any purchases.
 3. Get the order details for orders with a total quantity greater than the average quantity of all orders.
 

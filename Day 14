@@ -1,6 +1,31 @@
 Example:
 Create a stored procedure named "get_customer_orders" that takes a customer ID as input and retrieves all the orders placed by that customer.
 
+CREATE PROCEDURE get_customer_orders
+    @CustomerID INT
+AS
+BEGIN
+    SELECT
+        o.OrderID,
+        o.OrderDate,
+        p.ProductName,
+        od.Quantity,
+        od.UnitPrice,
+        (od.Quantity * od.UnitPrice) AS TotalAmount
+    FROM
+        Orders AS o
+    INNER JOIN
+        OrderDetails AS od ON o.OrderID = od.OrderID
+    INNER JOIN
+        Products AS p ON od.ProductID = p.ProductID
+    WHERE
+        o.CustomerID = @CustomerID
+    ORDER BY
+        o.OrderDate;
+END;
+
+
+
 Practice Questions:
 1. Create a trigger named "update inventory" that automatically updates the quantity in the "inventory" table when an order is placed.
 2. Create a user-defined function named "calculate_discount" that takes the order total as input and returns the discount amount based on specific conditions.

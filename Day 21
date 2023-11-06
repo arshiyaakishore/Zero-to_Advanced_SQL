@@ -14,7 +14,7 @@ Dataset: Employees (employee_id, employee_name, salary), Salary Log (log_id, emp
 3. Calculate the average rating for each product and assign a rank based on the rating using a window function.
 Dataset: Products (product_id, product_name), Ratings (product_id, rating)
 
-4. Implement a stored procedure to insert a new order along with its order items into the database..
+4. Implement a stored procedure to insert a new order along with its order items into the database.
 Dataset: Orders (order_id, order_date), Order_Items (order_id, product_id, quantity, amount)
 
 5. Retrieve the top 5 products based on the cumulative sales amount using a window function.
@@ -22,3 +22,15 @@ Dataset: Products (product_id, product_name), Order_Items (order_id, product_id,
 
 6. Create a stored procedure to calculate the total order amount for a specific customer and return the result.
 Dataset: Customers (customer_id, customer_name), Orders (order_id, customer_id, order_amount)
+
+7. Calculate the average rating for each product category and assign a rank based on the rating using a window function.
+Dataset: Products (product_id, product_name, category_id), Ratings (product_id, rating), Categories (category_id, category_name)
+
+8. Implement a stored procedure to delete a customer and all associated orders and order items from the database.
+Dataset: Customers (customer_id, customer_name)Orders (order_id, customer_id), Order_Items (order_id, product_id, quantity)
+
+9. Retrieve the top 3 employees based on their total sales amounts using a window function.
+Dataset: Employees (employee_id, employee_name), Orders (order_id, employee_id, order_amount)
+
+10. Create a stored procedure to update the quantity in stock for a specific product and log the change in a separate table.
+Dataset: Products (product_id, product_name, quantity_in_stock), Stock Log (log_id, product_id, old_quantity, new quantity, modified_date)

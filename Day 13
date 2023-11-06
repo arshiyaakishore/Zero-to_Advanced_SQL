@@ -28,3 +28,10 @@ SET balance = balance + @amount
 WHERE account_id = @account_id;
 
 COMMIT;
+
+
+BEGIN TRANSACTION;
+SELECT * FROM employees
+WHERE employee_id = 123
+FOR UPDATE;
+

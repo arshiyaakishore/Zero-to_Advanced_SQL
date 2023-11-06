@@ -12,3 +12,19 @@ Practice Questions:
 1. Write a SQL query to start a transaction, delete all records from the "orders" table, and roll back the transaction.
 2. Write a SQL query to update the "balance" column of the "accounts" table by adding a specific amount for a specific account, ensuring the consistency of the transaction.
 3. Write a SQL query to lock a specific row in the "employees" table to prevent other transactions from modifying it.
+
+BEGIN TRANSACTION;
+DELETE FROM orders;
+ROLLBACK;
+
+
+BEGIN TRANSACTION;
+DECLARE @account_id INT;
+DECLARE @amount DECIMAL(10, 2); -- Replace with your specific data
+SET @account_id = 123; -- Replace with the specific account ID
+SET @amount = 100.00; -- Replace with the specific amount to add
+UPDATE accounts
+SET balance = balance + @amount
+WHERE account_id = @account_id;
+
+COMMIT;

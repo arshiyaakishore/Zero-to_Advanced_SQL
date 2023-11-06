@@ -2,3 +2,23 @@ Example Questions:
 
 1. Calculate the cumulative sales amount for each product using a window function.
 2. Create a stored procedure to insert a new customer into the database.
+
+Practice Questions
+
+1. Retrieve the top 3 customers based on their total order amounts, and calculate the percentage of each customer's order amount compared to the total.
+Dataset: Customers (customer_id, customer_name), Orders (order_id, customer_id, order amount)
+
+2. Create a stored procedure to update the salary of an employee and log the change in a separate table.
+Dataset: Employees (employee_id, employee_name, salary), Salary Log (log_id, employee_id, old salary, new salary, modified_date)
+
+3. Calculate the average rating for each product and assign a rank based on the rating using a window function.
+Dataset: Products (product_id, product_name), Ratings (product_id, rating)
+
+4. Implement a stored procedure to insert a new order along with its order items into the database..
+Dataset: Orders (order_id, order_date), Order_Items (order_id, product_id, quantity, amount)
+
+5. Retrieve the top 5 products based on the cumulative sales amount using a window function.
+Dataset: Products (product_id, product_name), Order_Items (order_id, product_id, quantity, amount)
+
+6. Create a stored procedure to calculate the total order amount for a specific customer and return the result.
+Dataset: Customers (customer_id, customer_name), Orders (order_id, customer_id, order_amount)

@@ -30,3 +30,31 @@ Practice Questions:
 1. Create a trigger named "update inventory" that automatically updates the quantity in the "inventory" table when an order is placed.
 2. Create a user-defined function named "calculate_discount" that takes the order total as input and returns the discount amount based on specific conditions.
 3. Write a SQL query to optimize a slow-performing query by adding appropriate indexes and rewriting the query structure.
+
+CREATE TRIGGER update_inventory
+AFTER INSERT ON orders
+FOR EACH ROW
+BEGIN
+    UPDATE inventory
+    SET quantity = quantity - NEW.order_quantity
+    WHERE product_id = NEW.product_id;
+END;
+
+
+DELIMITER //
+
+CREATE FUNCTION calculate_discount(order_total DECIMAL(10, 2)) RETURNS DECIMAL(10, 2)
+BEGIN
+    DECLARE discount DECIMAL(10, 2);
+
+    IF order_total >= 1000 THEN
+        SET discount = order_total * 0.1;
+    ELSE
+        SET discount = 0;
+    END IF;
+
+    RETURN discount;
+END;
+//
+DELIMITER ;
+

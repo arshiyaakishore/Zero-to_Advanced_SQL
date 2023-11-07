@@ -41,4 +41,21 @@ BEGIN
 END;
 
 
+DELIMITER //
+CREATE FUNCTION calculate_discount(order_total DECIMAL(10, 2)) RETURNS DECIMAL(10, 2)
+BEGIN
+    DECLARE discount DECIMAL(10, 2);
+    
+    IF order_total >= 1000 THEN
+        SET discount = order_total * 0.1;
+    ELSE
+        SET discount = 0;
+    END IF;
+
+    RETURN discount;
+END;
+//
+DELIMITER ;
+
+
 

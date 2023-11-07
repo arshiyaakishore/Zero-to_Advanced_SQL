@@ -28,14 +28,11 @@ Dataset: Sales (product_id, month1 amount, month2 amount, month3 amount)
 7. Design a database schema for an online marketplace using entity-relationship modeling.
 Dataset: Customers (customer_id, customer name), Products (product_id, product_name), Orders (order_id, customer_id, product_id)
 
-8. Write a recursive SQL query to find all categories and their subcategories in a hierarchical category table. Dataset: Categories (category_id, category_name, parent_category_id)
+8. Write a recursive SQL query to find all categories and their subcategories in a hierarchical category table.
+Dataset: Categories (category_id, category_name, parent_category_id)
 
-9. Use advanced SQL techniques to perform a cross join between
-
-two tables.
-
+9. Use advanced SQL techniques to perform a cross join between two tables.
 Dataset: Table1 (column1), Table2 (column2)
 
 10. Design a database schema for a music streaming service using entity-relationship modeling.
-
 Dataset: Users (user_id, username), Songs (song_id, song_name), Playlists (playlist_id, user_id, song_id)

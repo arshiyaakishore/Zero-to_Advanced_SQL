@@ -2,3 +2,40 @@ Example Questions:
 
 1. Design a database schema for an online bookstore using entity- relationship modeling.
 2. Write a recursive SQL query to find all employees and their subordinates in a hierarchical organization structure
+
+
+
+Practice Questions
+
+1. Normalize the given unnormalized table into 3rd normal form (3NF).
+Dataset: Employees (employee_id, employee_name, department, city, country)
+
+2. Write a recursive SQL query to find all ancestors of a specific employee in a hierarchical employee table.
+Dataset: Employees (employee_id, employee_name, manager_id)
+
+3. Use advanced SQL techniques to pivot the given table and transform rows into columns.
+Dataset: Sales (product_id, month, amount)
+
+4. Design a database schema for a university system using entity- relationship modeling.
+Dataset: Students (student_id, student_name), Courses (course_id, course_name), Enrollments (enrollment_id, student_id, course_id)
+
+5. Write a recursive SQL query to find all dependent employees under a specific manager in a hierarchical organization structure.
+Dataset: Employees (employee_id, employee_name, manager_id)
+
+6. Use advanced SQL techniques to unpivot the given table andtransform columns into rows.
+Dataset: Sales (product_id, month1 amount, month2 amount, month3 amount)
+
+7. Design a database schema for an online marketplace using entity-relationship modeling.
+Dataset: Customers (customer_id, customer name), Products (product_id, product_name), Orders (order_id, customer_id, product_id)
+
+8. Write a recursive SQL query to find all categories and their subcategories in a hierarchical category table. Dataset: Categories (category_id, category_name, parent_category_id)
+
+9. Use advanced SQL techniques to perform a cross join between
+
+two tables.
+
+Dataset: Table1 (column1), Table2 (column2)
+
+10. Design a database schema for a music streaming service using entity-relationship modeling.
+
+Dataset: Users (user_id, username), Songs (song_id, song_name), Playlists (playlist_id, user_id, song_id)

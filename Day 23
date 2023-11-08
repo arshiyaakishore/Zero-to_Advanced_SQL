@@ -1,7 +1,25 @@
 Example Questions:
 
 1. Identify and eliminate redundant or unnecessary joins in a complex query.
-
 2. Rewrite a subquery as a join to improve query performance.
-
 3. Use appropriate indexes to optimize query execution.
+
+Practice Questions
+
+1. Optimize a query that retrieves customer details along with their total order amounts for a specific date range.
+Dataset: Customers (customer_id, customer_name), Orders (order_id, customer_id, order_date, order amount)
+
+2. Identify and eliminate unnecessary joins in a query that retrieves product details and their corresponding categories.
+Dataset: Products (product_id, product_name, category_id), Categories (category_id, category_name)
+
+3. Rewrite a subquery as a join in a query that retrieves the order details along with the customer names for all orders.
+Dataset: Orders (order_id, customer_id, order_date), Customers (customer_id, customer_name)
+
+4. Optimize a query that calculates the average rating for each product by using appropriate indexes.
+Dataset: Products (product_id, product_name), Ratings (product_id, rating)
+
+5. Identify and eliminate redundant joins in a query that retrieves employee details along with their department information.
+Dataset: Employees (employee_id, employee_name, department_id), Departments (department_id, department_name)
+
+6. Rewrite a subquery as a join in a query that retrieves the names of customers who have placed at least two orders.
+Dataset: Customers (customer_id, customer_name), Orders (order_id, customer_id)

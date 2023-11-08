@@ -1,0 +1,7 @@
+Example Questions:
+
+1. Identify and eliminate redundant or unnecessary joins in a complex query.
+
+2. Rewrite a subquery as a join to improve query performance.
+
+3. Use appropriate indexes to optimize query execution.

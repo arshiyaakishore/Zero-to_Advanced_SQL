@@ -26,3 +26,14 @@ Dataset: Orders (order_id, order_date, order amount)
 
 7. Write a recursive SQL query to find all ancestors of a specific employee in a hierarchical employee table.
 Dataset: Employees (employee_id, employee_name, manager_id)
+
+Practice Questions
+
+8. Use a common table expression to calculate the average rating and the number of reviews for each product.
+Dataset: Products (product_id, product_name), Reviews (product_id, rating)
+
+9. Apply window functions to calculate the rank and dense rank of sales amounts for each product.
+Dataset: Products (product_id, product_name), Order_Items (order_id, product_id, amount)
+
+10. Write a recursive SQL query to find all dependent employees under a specific manager in a hierarchical organization structure.
+Dataset: Employees (employee_id, employee_name, manager_id)

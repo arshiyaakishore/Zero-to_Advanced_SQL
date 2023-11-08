@@ -23,3 +23,15 @@ Dataset: Employees (employee_id, employee_name, department_id), Departments (dep
 
 6. Rewrite a subquery as a join in a query that retrieves the names of customers who have placed at least two orders.
 Dataset: Customers (customer_id, customer_name), Orders (order_id, customer_id)
+
+7. Optimize a query that calculates the total sales amount for each month by using appropriate indexes.
+Dataset: Orders (order_id, order_date, order amount)
+
+8. Identify and eliminate unnecessary joins in a query that retrieves product details and their corresponding suppliers' names.
+Dataset: Products (product_id, product_name, supplier_id), Suppliers (supplier_id, supplier_name)
+
+9. Rewrite a subquery as a join in a query that retrieves the names of customers who have placed orders in the past 30 days.
+Dataset: Customers (customer_id, customer_name), Orders (order_id, customer_id, order_date)
+
+10. Optimize a query that retrieves the top 5 products with the highest sales amounts by using appropriate indexes.
+Dataset: Products (product_id, product_name), Order_Items (order_id, product_id, quantity, amount)

@@ -3,3 +3,26 @@ Example Questions:
 1. Write a recursive SQL query to find all employees and their subordinates in a hierarchical organization structure.
 2. Use a common table expression to calculate the running total of sales amounts for each product.
 3. Apply window functions to calculate moving averages of product ratings.
+
+Practice Questions
+
+1. Write a recursive SQL query to find all categories and their subcategories in a hierarchical category table.
+Dataset: Categories (category.id, category_name, parent_category_id)
+
+2. Use a common table expression to calculate the running total of order amounts for each customer.
+Dataset: Customers (customer_id, customer_name), Orders (order_id, customer_id, order_amount)
+
+3. Apply window functions to calculate the average rating and the maximum rating for each product.
+Dataset: Products (product_id, product_name), Ratings (product_id, rating)
+
+4. Write a recursive SQL query to find all employees and their direct reports in a hierarchical employee table.
+Dataset: Employees (employee_id, employee_name, manager_id)
+
+5. Use a common table expression to calculate the cumulative sum of quantities for each product.
+Dataset: Products (product_id, product_name), Order Items (order_id, product_id, quantity)
+
+6. Apply window functions to calculate the minimum and maximum order amounts for each month.
+Dataset: Orders (order_id, order_date, order amount)
+
+7. Write a recursive SQL query to find all ancestors of a specific employee in a hierarchical employee table.
+Dataset: Employees (employee_id, employee_name, manager_id)

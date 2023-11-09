@@ -8,6 +8,11 @@ Practice Questions:
 2. Write a SQL query to retrieve the names of all customers from the "customers" table in alphabetical order.
 3. Write a SQL query to retrieve the total number of orders from the "orders" table
 
+#1
 SELECT *FROM products WHERE category='Electronics' AND price<1000;
+
+#2
 SELECT customers FROM customers ORDER BY=name;
+
+#3
 SELECT COUNT(*) AS total_orders FROM orders;

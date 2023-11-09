@@ -7,7 +7,6 @@ WHERE product_id = your_product_id;
 COMMIT;
 
 
-
 Practice Questions:
 1. Write a SQL query to start a transaction, delete all records from the "orders" table, and roll back the transaction.
 2. Write a SQL query to update the "balance" column of the "accounts" table by adding a specific amount for a specific account, ensuring the consistency of the transaction.

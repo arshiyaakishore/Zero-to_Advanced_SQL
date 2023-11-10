@@ -8,8 +8,11 @@ Practice Questions:
 2. Write a SQL query to retrieve the employees who were hired between a specific date range.
 3. Write a SQL query to retrieve all the customers who do not have a phone number specified in the database.
 
+#1
 SELECT * FROM products WHERE price>1000 OR price<500;
 
+#2
 SELECT * FROM emplolyees WHERE hire_date '2023-01-01' BETWEEN 'YYYY-MM-DD';
 
+#3
 SELECT * FROM customers WHERE phone_no IS NULL;

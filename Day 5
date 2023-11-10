@@ -7,9 +7,11 @@ Practice Questions:
 2. Write a SQL query to insert new records into the "employees" table, selecting data from the "temp_employees" table.
 3. Write a SQL query to update the "discount" column of the "orders" table by increasing it by 5% for all orders placed before a specific date
 
-
+#1
 DELETE FROM customers WHERE last_login_date< DATE_SUB(NOW(), INTERVAL 1 YEAR);
 
+#2
 INSERT INTO employees (employee_id, employee_name, department, hire_date) SELECT employee_id, employee_name, department, hire_date FROM temp_employees;
 
+#3
 UPDATE orders SET discount= discount*1.05 WHERE order_date<'specific_date_here';

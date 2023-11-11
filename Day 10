@@ -8,10 +8,13 @@ Practice Questions:
 2. Create a table named "products" with columns for product ID, name, and price, where the product ID is the primary key and the price cannot be null.
 3. Create a table named "categories" with columns for category ID and name, where the category ID is the primary key and the name must be unique.
 
+#1
 CREATE TABLE orders( order_id INT PRIMARY KEY, customer_id INT, order_date DATE, FOREIGN KEY (customer_id) REFERENCES customers(customer_id));
 
+#2
 CREATE TABLE products (product_id INT PRIMARY KEY,name VARCHAR(255),price DECIMAL(10, 2) NOT NULL);
 
+#3
 CREATE TABLE categories (category_id INT PRIMARY KEY,name VARCHAR(255) UNIQUE);
 
 

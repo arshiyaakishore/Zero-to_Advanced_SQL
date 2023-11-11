@@ -10,8 +10,12 @@ Practice Questions:
 2. Create an index on the "email" column of the "customers" table for faster searching.
 3. Create a view named "product_inventory" that retrieves the product name and the available quantity for each product from the "products" and "inventory" tables.
 
+
+#1
 CREATE VIEW order_summary AS SELECT customer_id, COUNT(order_id) AS number_of_orders, SUM(order_amount) AS total_order_amount FROM orders GROUP BY customer_id;
 
+#2
 CREATE INDEX idx_customers_email ON customers(email);
 
+#3
 CREATE VIEW product_inventory AS SELECT p.product_name, i.available_quantity FROM products p JOIN inventory i ON p.product_id = i.product_id;

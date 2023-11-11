@@ -8,8 +8,11 @@ Practice Questions:
 2. Write a SQL query to retrieve all the customers who have placed an order after the latest order date for a specific product.
 3. Write a SQL query to retrieve all the products that belong to categories with more than 10 products.
 
+#1
 SELECT employee_name FROM employees WHERE salary>(SELECT MAX(salary) FROM employees WHERE department='Sales';
 
+#2
 SELECT DISTINCT c.customer_name FROM customers c JOIN orders o ON c.customer_id = o.customer_id WHERE o.order_date > (SELECT MAX(order_date) FROM order_details WHERE product_id = 'specific_product_id');
 
+#3
 SELECT p.product_name, c.category_name FROM products p JOIN categories c ON p.category_id = c.category_id WHERE c.category_id IN ( SELECT category_id FROM products GROUP BY category_id HAVING COUNT(*) > 10);

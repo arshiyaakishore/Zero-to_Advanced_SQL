@@ -1,5 +1,6 @@
 Example:
 Write a SQL query to start a transaction, update the "inventory" table by reducing the quantity of a product, and commit the transaction.
+
 BEGIN TRANSACTION;
 UPDATE inventory
 SET quantity = quantity - quantity_to_reduce
@@ -12,25 +13,29 @@ Practice Questions:
 2. Write a SQL query to update the "balance" column of the "accounts" table by adding a specific amount for a specific account, ensuring the consistency of the transaction.
 3. Write a SQL query to lock a specific row in the "employees" table to prevent other transactions from modifying it.
 
+#1
 BEGIN TRANSACTION;
 DELETE FROM orders;
 ROLLBACK;
 
-
-BEGIN TRANSACTION;
-DECLARE @account_id INT;
-DECLARE @amount DECIMAL(10, 2); -- Replace with your specific data
-SET @account_id = 123; -- Replace with the specific account ID
-SET @amount = 100.00; -- Replace with the specific amount to add
+#2
+START TRANSACTION;
 UPDATE accounts
-SET balance = balance + @amount
-WHERE account_id = @account_id;
-
+SET balance = balance + :amount_to_add
+WHERE account_id = :your_account_id;
 COMMIT;
 
-
-BEGIN TRANSACTION;
-SELECT * FROM employees
-WHERE employee_id = 123
+#3
+-- Start the transaction
+START TRANSACTION;
+-- Lock a specific row in the "employees" table
+SELECT *
+FROM employees
+WHERE employee_id = :your_employee_id
 FOR UPDATE;
+-- Perform your operations on the locked row if needed
+
+--Commit
+COMMIT;
+
 

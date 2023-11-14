@@ -25,22 +25,21 @@ BEGIN
     WHERE product_id = NEW.product_id;
 END;
 
-
-DELIMITER //
+#2
 CREATE FUNCTION calculate_discount(order_total DECIMAL(10, 2)) RETURNS DECIMAL(10, 2)
 BEGIN
     DECLARE discount DECIMAL(10, 2);
-    
-    IF order_total >= 1000 THEN
-        SET discount = order_total * 0.1;
-    ELSE
-        SET discount = 0;
+    -- Set default discount to 0
+    SET discount = 0;
+    -- Apply discount based on conditions
+    IF order_total > 1000 THEN
+        SET discount = order_total * 0.1; -- 10% discount for orders over 1000
+    ELSEIF order_total > 500 THEN
+        SET discount = order_total * 0.05; -- 5% discount for orders over 500
     END IF;
 
     RETURN discount;
 END;
-//
-DELIMITER ;
 
-
+#3
 

@@ -1,29 +1,13 @@
 Example:
 Create a stored procedure named "get_customer_orders" that takes a customer ID as input and retrieves all the orders placed by that customer.
 
-CREATE PROCEDURE get_customer_orders
-    @CustomerID INT
-AS
+CREATE PROCEDURE get_customer_orders(IN input_customer_id INT)
 BEGIN
-    SELECT
-        o.OrderID,
-        o.OrderDate,
-        p.ProductName,
-        od.Quantity,
-        od.UnitPrice,
-        (od.Quantity * od.UnitPrice) AS TotalAmount
-    FROM
-        Orders AS o
-    INNER JOIN
-        OrderDetails AS od ON o.OrderID = od.OrderID
-    INNER JOIN
-        Products AS p ON od.ProductID = p.ProductID
-    WHERE
-        o.CustomerID = @CustomerID
-    ORDER BY
-        o.OrderDate;
+    -- Retrieve orders for the specified customer ID
+    SELECT *
+    FROM orders
+    WHERE customer_id = input_customer_id;
 END;
-
 
 
 Practice Questions:
@@ -31,6 +15,7 @@ Practice Questions:
 2. Create a user-defined function named "calculate_discount" that takes the order total as input and returns the discount amount based on specific conditions.
 3. Write a SQL query to optimize a slow-performing query by adding appropriate indexes and rewriting the query structure.
 
+#1
 CREATE TRIGGER update_inventory
 AFTER INSERT ON orders
 FOR EACH ROW

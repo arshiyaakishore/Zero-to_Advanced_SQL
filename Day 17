@@ -1,4 +1,4 @@
-Resources:
+jResources:
 "SQL Wildcards" and "SQL Regular Expressions" on tutorialspoint.com (https://www.tutorialspoint.com/sql/sql- regular-expressions.htm)
 "Sorting Rows with NULL Values in SQL" on stackoverflow.com (https://stackoverflow.m/questions/18411081/sorting-rows- with-null-values-in-sql
 
@@ -6,6 +6,9 @@ Example Questions:
 1. Retrieve all employees whose names start with 'J'.
 2. Find the products with names containing the word 'red".
 3. Get the list of employees sorted by their hire date in descending order.
+
+#1
+SELECT * FROM employees WHERE name LIKE 'J%';
 
 Practice Questions
 

@@ -29,9 +29,9 @@ SELECT *FROM Employees ORDER BY salary ISNULL, salary ASC;
 Dataset: Customers (customer_id, customer_name)
 SELECT * FROM Customers WHERE LENGTH(customer_name) = 5;
 
-
 5. Find the products with names starting with 'S' and ending with e.
 Dataset: Products (product_id, product_name)
+SELECT * FROM Products WHERE product_name LIKE 'S%e';
 
 6. Get the list of employees sorted by their last name and then by their first name.
 Dataset: Employees (employee_id, first name. last_name, salary)

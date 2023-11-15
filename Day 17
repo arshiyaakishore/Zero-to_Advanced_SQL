@@ -1,7 +1,3 @@
-jResources:
-"SQL Wildcards" and "SQL Regular Expressions" on tutorialspoint.com (https://www.tutorialspoint.com/sql/sql- regular-expressions.htm)
-"Sorting Rows with NULL Values in SQL" on stackoverflow.com (https://stackoverflow.m/questions/18411081/sorting-rows- with-null-values-in-sql
-
 Example Questions:
 1. Retrieve all employees whose names start with 'J'.
 2. Find the products with names containing the word 'red".
@@ -31,6 +27,8 @@ SELECT *FROM Employees ORDER BY salary ISNULL, salary ASC;
 
 4. Retrieve the customers whose names contain exactly five characters.
 Dataset: Customers (customer_id, customer_name)
+SELECT * FROM Customers WHERE LENGTH(customer_name) = 5;
+
 
 5. Find the products with names starting with 'S' and ending with e.
 Dataset: Products (product_id, product_name)

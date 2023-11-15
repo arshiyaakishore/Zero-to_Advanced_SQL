@@ -15,7 +15,6 @@ SELECT * FROM products WHERE product_name LIKE '%red%';
 SELECT * FROM employees ORDER BY hire_date DESC;
 
 
-
 Practice Questions
 
 1. Retrieve all customers with names starting with 'A' and ending with 'n'

@@ -9,6 +9,10 @@ Example Questions:
 
 #1
 SELECT * FROM employees WHERE name LIKE 'J%';
+#2
+SELECT * FROM products WHERE product_name LIKE '%red%';
+#3
+
 
 Practice Questions
 

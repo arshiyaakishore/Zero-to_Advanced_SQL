@@ -19,9 +19,11 @@ Practice Questions
 
 1. Retrieve all customers with names starting with 'A' and ending with 'n'
 Dataset: Customers (customer_id, customer_name)
+SELECT * FROM Customers WHERE customer_name LIKE 'A%n';
 
 2. Find the products with names containing at least one digit.
 Dataset: Products (product_id, product_name)
+SELECT * FROM Products WHERE product_name LIKE '%[0-9]%';
 
 3. Get the list of employees sorted by their salary in ascending order.NULL values should appear at the end.
 Dataset: Employees (employee_id, employee_name, salary)

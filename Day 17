@@ -27,7 +27,7 @@ SELECT * FROM Products WHERE product_name LIKE '%[0-9]%';
 
 3. Get the list of employees sorted by their salary in ascending order.NULL values should appear at the end.
 Dataset: Employees (employee_id, employee_name, salary)
-SELECT *FROM Employees ORDER BY salary
+SELECT *FROM Employees ORDER BY salary ISNULL, salary ASC;
 
 4. Retrieve the customers whose names contain exactly five characters.
 Dataset: Customers (customer_id, customer_name)

@@ -40,6 +40,13 @@ SELECT *FROM employees ORDER BY last_name, firt_name;
 7. Retrieve the orders placed on a specific date and sort them by the customer name in alphabetical order.
 Dataset: Orders (order_id, order date, customer_id)
 
+SELECT o.order_id, o.order_date, o.customer_id, c.customer_name
+FROM Orders o
+JOIN Customers c ON o.customer_id = c.customer_id
+WHERE o.order_date = 'specific_date'
+ORDER BY c.customer_name;
+ 
+
 8. Find the products with names containing exactly three letters.
 Dataset: Products (product_id, product_name)
 

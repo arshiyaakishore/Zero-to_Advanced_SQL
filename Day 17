@@ -46,12 +46,15 @@ JOIN Customers c ON o.customer_id = c.customer_id
 WHERE o.order_date = 'specific_date'
 ORDER BY c.customer_name;
  
-
 8. Find the products with names containing exactly three letters.
 Dataset: Products (product_id, product_name)
+SELECT *FROM products WHERE LENGTH(product_name)=3;
 
 9. Get the list of employees sorted by their salary in descending order. NULL values should appear at the beginning.
 Dataset: Employees (employee_id, employee_name, salary)
+SELECT employee_id, employee_name, salary FROM Employees ORDER BY salary DESC NULLS FIRST;
 
 10. Retrieve the customers whose names contain a space character.
 Dataset: Customers (customer_id, customer name)
+SELECT customer_id, customer_name FROM Customers WHERE customer_name LIKE '% %';
+

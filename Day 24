@@ -4,6 +4,10 @@ Example Questions:
 2. Use a common table expression to calculate the running total of sales amounts for each product.
 3. Apply window functions to calculate moving averages of product ratings.
 
+#1
+#2
+#3
+
 Practice Questions
 
 1. Write a recursive SQL query to find all categories and their subcategories in a hierarchical category table.

@@ -3,6 +3,11 @@ Example Questions:
 2. Find the average salary for each department.
 3. Get the maximum and minimum quantities ordered for each product.
 
+#1
+SELECT customer_id, SUM(order_amount) AS total_order_amount FROM orders GROUP BY customer_id;
+#2
+#3
+
 Practice Questions
 
 1. Calculate the total quantity and total amount for each order.

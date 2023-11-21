@@ -8,6 +8,7 @@ SELECT customer_id, SUM(order_amount) AS total_order_amount FROM orders GROUP BY
 #2
 SELECT department_id, AVG(salary) AS average_salary FROM employees GROUP BY department_id;
 #3
+SELECT product_id, MAX(quantity) AS max_qty, MIN(quantity) AS min_qty FROM order_details GROUP BY product_id;
 
 Practice Questions
 

@@ -1,51 +1,15 @@
 Example Questions:
 1. Retrieve all customers who have made at least one purchase.
-SELECT DISTINCT
-    c.CustomerID,
-    c.CustomerName
-FROM
-    Customers AS c
-JOIN
-    Orders AS o ON c.CustomerID = o.CustomerID;
-
 
 2. Find the names of customers who have not made any purchases.
 
-SELECT
-    c.CustomerName
-FROM
-    Customers AS c
-LEFT JOIN
-    Orders AS o ON c.CustomerID = o.CustomerID
-WHERE
-    o.CustomerID IS NULL;
-
-
 3. Get the order details for orders with a total quantity greater than the average quantity of all orders.
-SELECT
-    o.OrderID,
-    o.OrderDate,
-    od.ProductID,
-    od.Quantity,
-    od.UnitPrice,
-    (od.Quantity * od.UnitPrice) AS TotalAmount
-FROM
-    Orders AS o
-JOIN
-    OrderDetails AS od ON o.OrderID = od.OrderID
-WHERE
-    od.Quantity > (
-        SELECT AVG(Quantity) FROM OrderDetails
-    );
-
 
 
 Practice Questions
 
 1. Write a query to find the top 5 customers with the highest total order amount.
 Dataset: Customers (customer_id, customer_name), Orders (order_id, customer_id, order_date, order amount)
-
-
 
 2. Retrieve the names of customers who have placed orders in the past 30 days.
 Dataset: Customers (customer_id, customer_name), Orders (order_id, customer_id, order_date)

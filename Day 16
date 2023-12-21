@@ -3,6 +3,11 @@ Example Questions:
 2. Find the products and their corresponding categories.
 3. Get a list of customers and their total order amounts.
 
+#1
+SELECT * FROM Orders;
+#2
+#3
+
 Practice Questions
 
 1. Retrieve the order details along with the customer name and product name for each order.

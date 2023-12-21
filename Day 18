@@ -21,6 +21,8 @@ SELECT order_id, SUM(quantity) AS total_quantity, SUM(amount) AS total_amount FR
 2. Find the average age and the number of employees for each job title.
 Dataset: Employees (employee_id, employee_name, age, job_title)
 
+SELECT job_title, AVG(age) AS avg_age, COUNT(*) AS no_of_emp FROM Employees GROUP BY job_title;
+
 3. Get the total number of products in each category.
 Dataset: Products (product_id, product_name, category_id), Categories (category_id, category_name)
 

@@ -15,6 +15,9 @@ Practice Questions
 1. Calculate the total quantity and total amount for each order.
 Dataset: Orders (order_id, order_date). Order Items (order_id, product_id, quantity, amount)
 
+SELECT order_id, SUM(quantity) AS total_quantity, SUM(amount) AS total_amount FROM OrderItems GROUP BY order_id;
+
+
 2. Find the average age and the number of employees for each job title.
 Dataset: Employees (employee_id, employee_name, age, job_title)
 

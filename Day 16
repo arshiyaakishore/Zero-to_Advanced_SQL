@@ -4,7 +4,7 @@ Example Questions:
 3. Get a list of customers and their total order amounts.
 
 #1
-SELECT * FROM Orders;
+SELECT 
 #2
 #3
 

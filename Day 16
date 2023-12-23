@@ -4,8 +4,10 @@ Example Questions:
 3. Get a list of customers and their total order amounts.
 
 #1
-SELECT 
+SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate, Orders.OrderAmount FROM Orders INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
+
 #2
+
 #3
 
 Practice Questions

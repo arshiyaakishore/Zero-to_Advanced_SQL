@@ -10,7 +10,6 @@ SELECT Products.ProductID, Products.ProductName, Categories.CategoryName FROM Pr
 #3
 SELECT Customers.CustomerID, Customers.CustomerName, SUM(Orders.OrderAmount) AS TotalOrderAmount FROM Customers LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID GROUP BY Customers.CustomerID, Customers.CustomerName;
 
-
 Practice Questions
 
 1. Retrieve the order details along with the customer name and product name for each order.

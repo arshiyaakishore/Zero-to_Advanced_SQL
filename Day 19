@@ -1,11 +1,13 @@
-
-"SQL UPDATE Statement" and "SQL DELETE Statement" on techonthenet.com (https://www.techonthenet.com/sql/ update.php)
-• "SQL Transactions" on tutorialspoint.com
-
 Example Questions:
 1. Update the email address of a specific customer.
 2. Delete all orders placed by a certain customer.
 3. Insert a new product into the database and ensure transactional integrity.
+
+#1
+UPDATE Customers SET email = 'new_email@example.com' WHERE customer_id = 'specific_customer_id';
+#2
+
+#3
 
 Practice Questions
 1. Increase the salary of all employees by 10%.

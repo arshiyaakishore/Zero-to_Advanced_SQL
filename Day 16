@@ -15,6 +15,7 @@ Practice Questions
 1. Retrieve the order details along with the customer name and product name for each order.
 Dataset: Customers (customer_id, customer_name). Orders (order_id, customer_id, order_date), Order_Items (order_id, product_id, quantity)
 
+
 2. Find the products and their corresponding suppliers' names.
 Dataset: Products (product_id, product_name, supplier_id), Suppliers (supplier_id, suppliere)
 

@@ -32,6 +32,7 @@ Dataset: Products (product_id, product_name). Reviews (product_id, rating)
 --
 
 
+
 5. Find the customers with the highest and lowest total order amounts.
 Dataset: Customers (customer_id, customer_name). Orders (order_id, customer_id, order amount)
 

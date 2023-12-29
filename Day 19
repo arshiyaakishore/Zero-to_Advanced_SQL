@@ -6,8 +6,32 @@ Example Questions:
 #1
 UPDATE Customers SET email = 'new_email@example.com' WHERE customer_id = 'specific_customer_id';
 #2
+DELETE Orders WHERE customer_id = 'specific_customer_id';
 
 #3
+-- Start a transaction
+START TRANSACTION;
+
+-- Insert new product into Products table
+INSERT INTO Products (product_name, supplier_id, price)
+VALUES ('New Product', 'supplier_id', 19.99);
+
+-- Get the ID of the newly inserted product
+SET @new_product_id = LAST_INSERT_ID();
+
+-- Check if the insertion was successful
+IF @new_product_id IS NOT NULL THEN
+    -- If successful, commit the transaction
+    COMMIT;
+    SELECT 'Transaction committed successfully.' AS status;
+ELSE
+    -- If unsuccessful, rollback the transaction
+    ROLLBACK;
+    SELECT 'Transaction rolled back due to an error.' AS status;
+END IF;
+
+
+
 
 Practice Questions
 1. Increase the salary of all employees by 10%.
